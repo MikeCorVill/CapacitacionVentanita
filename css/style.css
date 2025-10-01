@@ -1,0 +1,134 @@
+/* ---------------------------------------- HTML ---------------------------------------- */
+
+html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ========== Tamaño de la Fuente según la Pantalla ========== */
+body {
+  font-size: 10px;      /* Móvil por defecto */
+  padding-top: 90px;    /* Ajusta según la altura del navbar */
+  background-image: url('../img/VentanitaCap_Logo.jpg');
+  background-repeat: repeat;
+  /* background-position: top left;
+  background-attachment: fixed; */
+  background-size: 250px 250px;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;    /* Tablet en adelante */
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 30px;    /* Desktop en adelante */
+  }
+}
+
+/* ========== Tipos de Fuente ========== */
+@font-face {
+  font-family: 'Font1'; /* Nombre que tú quieras */
+  src: url('../fonts/liane.regular.ttf') format('truetype'),
+    url('../fonts/liane.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------------------------------- Header ---------------------------------------- */
+
+#img-logo-navbar {
+  max-height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* ========== NavBar ========== */
+.navbar{
+  height: auto;
+}
+.nav-link{
+  text-align: center;
+  width: 110px;
+}
+.nav-link-header:hover{
+  border-radius: 15px;
+  background-color: gray;
+}
+.nav-link-header a:hover{
+  color: black;
+}
+
+/* ---------------------------------------- Body ---------------------------------------- */
+
+/* ========== Secciones ========== */
+section {
+  height: auto; /* Cada sección ocupa toda la pantalla */
+  scroll-margin-top: 90px; /* Ajusta según altura del navbar */
+}
+
+/* ========== Inicio ========== */
+#img-inicio{
+  border-radius: 100%;
+}
+
+/* ========== Capacitación ========== */
+#nav-item-cap{
+  font-size: 10px;
+  text-align: center;
+}
+#img_sect_cap{
+  max-height: 125px;
+  max-width: auto;
+  margin: 0 auto;
+}
+#card-sect-cap .card{
+  border-width: 0px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+#capacitacion .nav-tabs .nav-item .imgButton{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+@media screen and (max-width: 991px) {
+    #capacitacion .nav-tabs .nav-item{
+        border-right: unset;
+        width: auto;
+        background-color: #2e4105;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    #capacitacion .nav-tabs .nav-item .imgButton{
+        display: flex;
+    }
+    #capacitacion .nav-tabs .nav-item .pMenu{
+        display: none;
+    }
+}
+
+/* ========== Nosotros ========== */
+
+/* ========== Sugerencias ========== */
+
+/* ========== Contacto ========== */
+.sucursal-mapa {
+    height: 200px; /* Altura deseada para el mapa */
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+#col-social-media{
+  text-align: center;
+  /* padding: 3px; */
+}
+#img-social-media{
+  height: 80px;
+  width: auto;
+}
+
+/* ---------------------------------------- Footer ---------------------------------------- */

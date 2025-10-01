@@ -4,51 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Capacitación</title>
+    <title> Ventanita Express de Denis! </title>
 
     <!-- Hojas de Estilo - CSS -->
-    <link rel="stylesheet" href="css/home.css">
-
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Llamado de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Llamado de Bootwatch -->
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/slate/bootstrap.min.css" rel="stylesheet">
+    <!-- Lllamado AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header id="encabezado-nabvar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
 
-                <!-- Imagen Logo -->
-                <a class="navbar-brand" href="Index.html">
-                    <img id="img-logo-navbar" src="img/VentanitacAP_Logo.jpg" data-atropos-offset="0">
+    <!-- Header-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio">
+                    <img id="img-logo-navbar" src="../img/VentanitaCap_Logo.jpg" data-atropos-offset="0">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Botones NavBar -->
-                <div class="collapse navbar-collapse" id="navbarColor04">
+                <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"> Inicio
-                                <span class="visually-hidden">(current)</span>
-                            </a>
+                            <a class="nav-link nav-link-header" href="#inicio"> Inicio </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false"> Menú </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#"> Capacitación </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> Acerca de... </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> Contacto </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> Sugerencias </a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header" href="#capacitacion"> Capacitación </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header" href="#nosotros"> Nosotros </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header" href="#sugerencias"> Sugerencias </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header" href="#contacto"> Contacto </a>
                         </li>
                     </ul>
                 </div>
@@ -56,81 +52,1309 @@
         </nav>
     </header>
 
-    <body id="body-container">
-        <h1>Heading 1</h1>
+    <!-- Body -->
 
-        <card>
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true"
-                        role="tab">Home</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" data-bs-toggle="tab" href="#profile" aria-selected="false" role="tab"
-                        tabindex="-1">Profile</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link disabled" href="#" aria-selected="false" tabindex="-1" role="tab">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" style="">
-                        <h6 class="dropdown-header">Dropdown header</h6>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+    <body id="body">
+
+        <div id="div-section section-inicio">
+            <section id="inicio">
+                <div class="card m-3 shadow-lg">
+                    <h3 class="card-header text-center bg-dark text-white">
+                        La Ventanita Express de Denis
+                    </h3>
+        
+                    <div class="card-body">
+                        <div class="card border-warning" style="max-width: 100%;">
+                            
+                            <div class="row g-0 align-items-center" style="padding: 15px;">
+                                <!-- Texto de introducción -->
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bienvenidos!</h5>
+                                        <p class="card-text">
+                                            Somos un emprendimiento de comida rápida que nació con el objetivo de
+                                            ofrecer productos de calidad, con un servicio ágil y accesible.
+                                            Actualmente contamos con <strong>tres locales de ventanilla</strong>,
+                                            donde nuestros clientes pueden realizar sus pedidos para llevar, recoger en
+                                            ventanilla o solicitar servicio express.
+                                        </p>
+                                        <p class="card-text">
+                                            Gracias al apoyo de nuestros clientes, seguimos creciendo y nos complace anunciar que 
+                                            próximamente abriremos <strong>nuestra primera sucursal con servicio en local</strong>,
+                                            donde podrán disfrutar de la misma calidad en un espacio más completo.
+                                        </p>
+                                        <p class="card-text">
+                                            Esta página está diseñada especialmente para
+                                            <strong>capacitar a nuestros colaboradores</strong>, tanto nuevos como actuales,
+                                            brindándoles toda la información necesaria para desarrollarse dentro del negocio.
+                                        </p>
+
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-action list-group-item-dark">En esta página encontrará lo siguiente:</li>
+                                            <a href="#inicio" class="list-group-item list-group-item-action">
+                                                <img width="50" height="50" src="../img/Icon1.png" alt="1"/>
+                                                <strong>Inicio:</strong> Presentación e introducción de la empresa.
+                                            </a>
+                                            <a href="#capacitacion" class="list-group-item list-group-item-action">
+                                                <img width="50" height="50" src="../img/Icon2.png" alt="2"/>
+                                                <strong>Capacitación:</strong> Videos, guías y materiales de apoyo.
+                                            </a>
+                                            <a href="#nosotros" class="list-group-item list-group-item-action">
+                                                <img width="50" height="50" src="../img/Icon3.png" alt="3"/>
+                                                <strong>Nosotros:</strong> Nuestra historia, misión y visión.
+                                            </a>
+                                            <a href="#sugerencias" class="list-group-item list-group-item-action">
+                                                <img width="50" height="50" src="../img/Icon4.png" alt="4"/>
+                                                <strong>Sugerencias:</strong> Espacio para ideas y mejoras.
+                                            </a>
+                                            <a href="#contacto" class="list-group-item list-group-item-action">
+                                                <img width="50" height="50" src="../img/Icon5.png" alt="4"/>
+                                                <strong>Contacto:</strong> Información para comunicarte con nosotros.
+                                            </a>
+                                        </ul>
+                                        <p class="card-text mt-3 text-center">
+                                            Nuestro objetivo es que cada integrante del equipo comparta la misma visión de servicio,calidad y compromiso, asegurando que nuestros clientes vivan la mejor experiencia posible.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img id="img-inicio" src="../img/VentanitaCap_Logo.jpg" class="img-fluid" alt="Ventanita_Express_Denis">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active show" id="home" role="tabpanel">
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
-                        retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-                        Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure
-                        terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
-                        american apparel, butcher voluptate nisi qui.</p>
+        
+                    <div class="card-footer text-muted text-center">
+                        Creciendo juntos desde nuestra primera ventanita
+                        <img width="32" height="32" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-growing-achievements-flaticons-flat-flat-icons-2.png" alt="external-growing-achievements-flaticons-flat-flat-icons-2"/>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
-                        Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four
-                        loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk
-                        aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore
-                        aesthetic magna delectus mollit.</p>
-                </div>
-                <div class="tab-pane fade" id="dropdown1">
-                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
-                        retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft
-                        beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR
-                        banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-                </div>
-                <div class="tab-pane fade" id="dropdown2">
-                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out
-                        master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan
-                        DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
-                        PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+            </section>
+        </div>
+
+        <div id="div-section section-capacitacion">
+            <div class="card m-3">
+
+                <section id="capacitacion">
+
+                    <!-- Navbar -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <img class="imgButton" src="../img/VentanitaCap_Logo.jpg" alt="" style="height: 80px;width: auto;">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#limpieza" aria-selected="true" role="tab"> Limpieza </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#hamburguesa" aria-selected="false" tabindex="-1" role="tab"> Hamburguesas </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#sandwich" aria-selected="false" tabindex="-1" role="tab"> Sandwiches </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#pollo" aria-selected="false" tabindex="-1" role="tab"> Pollo </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#papas" aria-selected="false" tabindex="-1" role="tab"> Papas </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#arroz" aria-selected="false" tabindex="-1" role="tab"> Arroces </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tacos" aria-selected="false" tabindex="-1" role="tab"> Tacos </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#hotdog" aria-selected="false" tabindex="-1" role="tab"> Perros Calientes </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#pescado" aria-selected="false" tabindex="-1" role="tab"> Pescado </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#quesadilla" aria-selected="false" tabindex="-1" role="tab"> Quesadilla </a>
+                        </li>
+                        <li id="nav-item-cap" class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#nachos" aria-selected="false" tabindex="-1" role="tab"> Nachos </a>
+                        </li>
+                    </ul>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">Video de Capacitación - Limpieza</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Frame del video -->
+                                    <div class="ratio ratio-16x9">
+                                        <iframe id="youtubeVideo" src="" title="YouTube video"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categorías -->
+                    <div id="myTabContent" class="tab-content">
+
+                        <!-- Limpieza -->
+                        <div class="tab-pane fade show active" id="limpieza" role="tabpanel">
+                            <div class="row">
+
+                                <!-- Lavado de Manos -->
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Limpieza</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de limpieza que se va a capcitar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Correcto Lavado de Manos">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Limpieza_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Limpieza</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de limpieza que se va a capcitar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Correcto Lavado de Manos">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Limpieza_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Limpieza</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de limpieza que se va a capcitar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Correcto Lavado de Manos">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Limpieza_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--  -->
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Limpieza</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de limpieza que se va a capcitar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Correcto Lavado de Manos">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Limpieza_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Limpieza</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de limpieza que se va a capcitar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Correcto Lavado de Manos">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Limpieza_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Hamburguesas -->
+                        <div class="tab-pane fade" id="hamburguesa" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hamburguesa</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Hamburguesa que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Nombre Hamburguesa">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hamburguesa</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Hamburguesa que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Nombre Hamburguesa">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hamburguesa</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Hamburguesa que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="https://youtu.be/NMmAj1EKdVo" data-title="Video de Capacitación - Nombre Hamburguesa">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Sandwiches -->
+                        <div class="tab-pane fade" id="sandwich" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Pollo -->
+                        <div class="tab-pane fade" id="pollo" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Papas -->
+                        <div class="tab-pane fade" id="papas" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Arroz -->
+                        <div class="tab-pane fade" id="arroz" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Tacos -->
+                        <div class="tab-pane fade" id="tacos" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Perros -->
+                        <div class="tab-pane fade" id="hotdog" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Pescado -->
+                        <div class="tab-pane fade" id="pescado" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Quesadilla -->
+                        <div class="tab-pane fade" id="quesadilla" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Nachos -->
+                        <div class="tab-pane fade" id="nachos" role="tabpanel">
+                            <div class="row">
+                                
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="card-sect-cap" class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre de la Sección</h5>
+                                                    <p class="card-text">
+                                                        Acá escribir el texto que describe el tipo de Producto que se va a preparar
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-body-secondary">
+                                                            <!-- Botón o ícono para abrir el modal -->
+                                                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#videoModal" 
+                                                                data-video="" data-title="Video de Capacitación - Nombre Producto">
+                                                                ▶ Ver Video
+                                                            </button>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" style="text-align: center;">
+                                                <img id="img_sect_cap" class="img-fluid rounded-start" src="../img/VentanitaCap_Logo.jpg" alt="Hamburguesa_Img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="div-section section-nosotros">
+            <div class="card m-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <section id="nosotros">
+                        
+                            <div class="card border-light m-3">
+                                <div class="card-header">
+                                    <h3>¿Quiénes Somos?</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        En medio de los desafíos de la pandemia, nació nuestra ilusión: transformar nuestra cocina en nuestro
+                                        espacio donde los sabores se convierten en memorias y los clientes en familia. Lo que comenzó como un
+                                        sueño familiar, pasó de ser consumidores a creadores de un menú único, hecho con amor y pensando para
+                                        conquistar corazones.
+                                    </p>
+                                    <p class="card-text">
+                                        Hoy, <strong>La Ventanita Express de Denis</strong> es más que un emprendimiento; es el hogar del
+                                        mejor sabor en comida rápida de Poás, Fraijanes y San Isidro, donde cada bocado lleva un toque de
+                                        cariño, tradición y pasión.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="card border-success m-3">
+                                <div class="row g-0">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <img src="..." class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nuestro Horario</h5>
+                                            <div class="list-group">
+                                                <li class="list-group-item">Lunes: Cerrado</li>
+                                                <li class="list-group-item">Mar, Mié, Jue, Vie: 12:00md a 2:30pm / 3:30pm a 9:00pm</li>
+                                                <li class="list-group-item">Sáb y Dom: 12:00md a 9:00pm</li>
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">*** Horarios podrían variar en fechas
+                                                    festivas ***</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="card border-light m-3" style="max-width: auto;">
+                                <div class="card-header">
+                                    <h3>Nuestros Valores</h3>
+                                </div>
+                                <div class="row g-0">
+                        
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <div class="card border-light m-3" style="max-width: auto; height: auto;">
+                                            <div class="card-header">
+                                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h3>Misión</h3>
+                                                <p class="card-text">
+                                                    En medio de los desafíos de la pandemia, nació nuestra ilusión: transformar nuestra cocina
+                                                    en nuestro
+                                                    espacio donde los sabores se convierten en memorias y los clientes en familia. Lo que
+                                                    comenzó como un
+                                                    sueño familiar, pasó de ser consumidores a creadores de un menú único, hecho con amor y
+                                                    pensando para
+                                                    conquistar corazones.
+                                                </p>
+                                                <p class="card-text">
+                                                    Hoy, <strong>La Ventanita Express de Denis</strong> es más que un emprendimiento; es el
+                                                    hogar del
+                                                    mejor sabor en comida rápida de Poás, Fraijanes y San Isidro, donde cada bocado lleva un
+                                                    toque de
+                                                    cariño, tradición y pasión.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <div class="card border-light m-3" style="max-width: auto; height: auto;">
+                                            <div class="card-header">
+                                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h3>Visión</h3>
+                                                <p class="card-text">
+                                                    Dar el mejor servicio de:
+                                                </p>
+                                                <div class="list-group">
+                                                    <li class="list-group-item">Express gratis a 3kms en la zona</li>
+                                                    <li class="list-group-item">Dar los mejores tiempos de respuesta de entrega de pedidos</li>
+                                                    <li class="list-group-item">Mantener la mejor calidad, tamaño, cantidad y precios de nuestro
+                                                        menú</li>
+                                                    <li class="list-group-item">Mantener promociones para nuestros clientes</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        
+                        </section>
+                    </div>
                 </div>
             </div>
-        </card>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <h3>
-            Heading
-            <small class="text-body-secondary">with faded secondary text</small>
-        </h3>
-        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </div>
+
+        <div id="div-section section-sugerencias">
+            <div class="card m-3">
+
+                <section id="sugerencias">
+                    <div class="card border-warning m-3">
+                        <div class="card-header">
+                            <h3>Sugerencias</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                En La Ventanita Express de Denis valoramos cada aporte de nuestros colaboradores,
+                                porque sabemos que las mejores ideas nacen de quienes viven el día a día del trabajo.
+                            </p>
+                            <p class="card-text">
+                                Este espacio está creado especialmente para que puedas expresarte con total libertad,
+                                compartiendo tus ideas, propuestas o comentarios que puedan ayudarnos a:
+                            </p>
+                            <div class="list-group">
+                                <li class="list-group-item">Mejorar la calidad de nuestro servicio.</li>
+                                <li class="list-group-item">Agilizar procesos en el día a día.</li>
+                                <li class="list-group-item">Solucionar problemas de manera más eficiente.</li>
+                                <li class="list-group-item">Crear un mejor ambiente de trabajo.</li>
+                            </div>
+                            <p class="card-text mt-3">
+                                Todas las sugerencias son bienvenidas, sin importar lo grandes o pequeñas que parezcan.
+                                Recuerda: tu voz es importante y puede marcar la diferencia en el crecimiento de nuestra
+                                familia Ventanita Express.
+                            </p>
+                            <form>
+                                <div>
+                                    <textarea class="form-control" id="exampleTextarea" rows="10" placeholder="Inserte la sugerencia aquí..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="div-section section-contacto">
+            <div class="card m-3">
+
+                <section id="contacto">
+                    <div class="card border-warning m-3">
+                        <div class="card-header"><h3>Contáctanos</h3></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4">1</div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">2</div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">3</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card border-light m-3">
+                                        <div class="card-header">
+                                            <img src="../img/VentanitaCap_Logo.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ventanita San Juán</h5>
+                                            <p class="card-text">Express | Retiro en Ventanilla</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <img src="../img/whatsapp.png" class="card-img-top" alt="..." style="height: 25px; width: auto;">
+                                                    ####-####
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="card mb-3 infoUbicacion">
+                                                <div class="row g-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dirección</h5>
+                                                        <div class="card-text">
+                                                            <div class="card-text">
+                                                                <p>Dirección: 75 metros sur de la escuela, San Juan norte, Poás, Alajuela.</p>
+                                                                <div id="map-sanjuan" class="sucursal-mapa"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card border-light m-3">
+                                        <div class="card-header">
+                                            <img src="../img/VentanitaCap_Logo.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ventanita Fraijanes</h5>
+                                            <p class="card-text">Express | Retiro en Ventanilla</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <img src="../img/whatsapp.png" class="card-img-top" alt="..." style="height: 25px; width: auto;">
+                                                    ####-####
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="card mb-3 infoUbicacion">
+                                                <div class="row g-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dirección</h5>
+                                                        <div class="card-text">
+                                                            <div class="card-text">
+                                                                <p>Dirección: 75 metros sur de la escuela, San Juan norte, Poás, Alajuela.</p>
+                                                                <div id="map-fraijanes" class="sucursal-mapa"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card border-light m-3">
+                                        <div class="card-header">
+                                            <img src="../img/VentanitaCap_Logo.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ventanita San Isidro</h5>
+                                            <p class="card-text">Express | Retiro en Ventanilla</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <img src="../img/whatsapp.png" class="card-img-top" alt="..." style="height: 25px; width: auto;">
+                                                    ####-####
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="card mb-3 infoUbicacion">
+                                                <div class="row g-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dirección</h5>
+                                                        <div class="card-text">
+                                                            <div class="card-text">
+                                                                <p>Dirección: 75 metros sur de la escuela, San Juan norte, Poás, Alajuela.</p>
+                                                                <div id="map-sanisidro" class="sucursal-mapa"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card border-light m-3">
+                                        <div class="card-header">
+                                            <img src="../img/VentanitaCap_Logo.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Denis House</h4>
+                                            <p class="card-text">Coffee & Restaurant</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <img src="../img/whatsapp.png" class="card-img-top" alt="..." style="height: 25px; width: auto;">
+                                                    ####-####
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="card mb-3 infoUbicacion">
+                                                <div class="row g-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dirección</h5>
+                                                        <div class="card-text">
+                                                            <div class="card-text">
+                                                                <p>Dirección: 75 metros sur de la escuela, San Juan norte, Poás, Alajuela.</p>
+                                                                <div id="map-restaurant" class="sucursal-mapa"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-warning m-3">
+                        <div class="card-header"><h3>Nuestras Redes Sociales</h3></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div id="col-social-media" class="col-sm-12 col-md-4 col-lg-4">
+                                    <a href="https://www.facebook.com/profile.php?id=100063658354611" target="_blank" rel="noopener noreferrer">
+                                        <img id="img-social-media" src="../img/facebook.png" class="card-img-top" alt="...">
+                                        <p>La Ventanita Express de Denis</p>
+                                    </a>
+                                </div>
+                                <div id="col-social-media" class="col-sm-12 col-md-4 col-lg-4">
+                                    <a href="https://www.instagram.com/laventanitaespressdedenis/" target="_blank" rel="noopener noreferrer">
+                                        <img id="img-social-media" src="../img/instagram.png" class="card-img-top" alt="...">
+                                        <p>@laventanitaespressdedenis</p>
+                                    </a>
+                                </div>
+                                <div id="col-social-media" class="col-sm-12 col-md-4 col-lg-4">
+                                    <a href="https://www.tiktok.com/@laventanitadedenis" target="_blank" rel="noopener noreferrer">
+                                        <img id="img-social-media" src="../img/tik-tok.png" class="card-img-top" alt="...">
+                                        <p>@laventanitadedenis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="div-footer">
+            <!-- Footer -->
+            <footer>
+                <div class="card">
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script Frame Videos -->
+    <script>
+        const videoModal = document.getElementById('videoModal');
+        const youtubeVideo = document.getElementById('youtubeVideo');
+        const videoTitle = document.getElementById('videoModalLabel');
 
-    <!-- Script ootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        videoModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget; // botón que abrió el modal
+            const videoUrl = button.getAttribute('data-video');
+            const title = button.getAttribute('data-title') || "Video de Capacitación";
+
+            youtubeVideo.src = videoUrl;
+            videoTitle.textContent = title;
+        });
+
+        videoModal.addEventListener('hidden.bs.modal', () => {
+            youtubeVideo.src = ""; // limpiar para detener el video
+        });
+    </script>
+    <!-- Scripts Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ0AqAW_I84_DW7pAYM-xuzQ05scXzr3U&callback=initMap"></script>
+    <script src="../js/maps.js"></script>
+    <script>window.onload = initMap</script>
 </body>
 
 </html>
