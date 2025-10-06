@@ -72,6 +72,10 @@ section {
 #img-inicio{
   border-radius: 100%;
 }
+#number-inicio{
+  height: 50px;
+  width: 50px;
+}
 
 /* ========== Capacitación ========== */
 #nav-item-cap{
