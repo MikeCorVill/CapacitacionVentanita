@@ -87,16 +87,39 @@ section {
   max-width: auto;
   margin: 0 auto;
 }
+#card-sect-cap{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 #card-sect-cap .card{
   border-width: 0px;
-  margin-top: 10px;
   padding-left: 15px;
+  text-align: center;
+}
+#sect-cap-text{
+  text-align: justify;
 }
 #capacitacion .nav-tabs .nav-item .imgButton{
     display: none;
     height: 50px;
     width: 50px;
 }
+#btn-play-video{
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 100%;
+  border: 0;
+}
+#img-play-video{
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+.progress{
+  width: 80%; 
+  margin: auto;
+}
+
 @media screen and (max-width: 991px) {
     #capacitacion .nav-tabs .nav-item{
         border-right: unset;
