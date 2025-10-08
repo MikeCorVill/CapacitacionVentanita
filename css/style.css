@@ -28,8 +28,8 @@ body {
 /* ========== Tipos de Fuente ========== */
 @font-face {
   font-family: 'Font1'; /* Nombre que tú quieras */
-  src: url('../fonts/liane.regular.ttf') format('truetype'),
-    url('../fonts/liane.regular.otf') format('opentype');
+  src: url('fonts/liane.regular.ttf') format('truetype'),
+    url('fonts/liane.regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
