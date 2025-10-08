@@ -96,6 +96,9 @@ section {
   padding-left: 15px;
   text-align: center;
 }
+#card-sect-cap .card-header{
+  border-radius: 25px;
+}
 #sect-cap-text{
   text-align: justify;
 }
@@ -117,7 +120,7 @@ section {
 }
 .progress{
   width: 80%; 
-  margin: auto;
+  margin: 10px auto;
 }
 
 @media screen and (max-width: 991px) {
