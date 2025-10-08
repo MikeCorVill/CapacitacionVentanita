@@ -1,25 +1,25 @@
-function initMap() {
-  var mapOptions = {
-    center: { lat:10.106803798171317, lng:-84.2404469484573},
-    zoom: 8
-  };
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+// function initMap() {
+//   var mapOptions = {
+//     center: { lat:10.106803798171317, lng:-84.2404469484573},
+//     zoom: 8
+//   };
+//   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(10.106803798171317, -84.2404469484573),
-    map: map
-  });
+//   var marker = new google.maps.Marker({
+//     position: new google.maps.LatLng(10.106803798171317, -84.2404469484573),
+//     map: map
+//   });
 
-  function actualizarPosicion(posicion) {
-    var latitud = posicion.coords.latitude;
-    var longitud = posicion.coords.longitude;
-    var nuevaPosicion = new google.maps.LatLng(latitud, longitud);
-    marker.setPosition(nuevaPosicion);
-    map.setCenter(nuevaPosicion);
-  }
+//   function actualizarPosicion(posicion) {
+//     var latitud = posicion.coords.latitude;
+//     var longitud = posicion.coords.longitude;
+//     var nuevaPosicion = new google.maps.LatLng(latitud, longitud);
+//     marker.setPosition(nuevaPosicion);
+//     map.setCenter(nuevaPosicion);
+//   }
 
-  navigator.geolocation.watchPosition(actualizarPosicion, null, {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
-}
+//   navigator.geolocation.watchPosition(actualizarPosicion, null, {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+// }
 
 // initMap carga la API de Google Maps.
 function initMap() {

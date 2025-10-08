@@ -102,6 +102,10 @@ section {
 #sect-cap-text{
   text-align: justify;
 }
+#img-sect-cap{
+  height: 150px;
+  width: auto;
+}
 #capacitacion .nav-tabs .nav-item .imgButton{
     display: none;
     height: 50px;
@@ -141,6 +145,15 @@ section {
 }
 
 /* ========== Nosotros ========== */
+#card-mision-vision{
+  height: 100%;
+}
+#div-img-mision-vision{
+  text-align: center;
+}
+#img-mision-vision{
+  height: 250px;
+}
 
 /* ========== Sugerencias ========== */
 
