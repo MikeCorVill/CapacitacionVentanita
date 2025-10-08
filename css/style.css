@@ -8,7 +8,7 @@ html {
 body {
   font-size: 10px;      /* Móvil por defecto */
   padding-top: 90px;    /* Ajusta según la altura del navbar */
-  background-image: url('../img/VentanitaCap_Logo.jpg');
+  background-image: url('https://res.cloudinary.com/dlcumkcyh/image/upload/v1759773386/Ventanita_Logo_j53p4z.png');
   background-repeat: repeat;
   /* background-position: top left;
   background-attachment: fixed; */
